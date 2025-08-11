@@ -76,8 +76,8 @@ func init() {
 	pflag.BoolVar(&debug, "debug", false, "Enable debug output")
 	pflag.BoolVar(&ResponseDebug, "responsedebug", false, "Enable full response output if debugging is on")
 	pflag.BoolVar(&NoDNSCache, "nodnscache", false, "Disable DNS caching")
-	pflag.BoolVar(&useBar, "bar", false, "Use progress bar instead of printing lines, can still use -stats")
-	pflag.IntVar(&totalGuess, "guess", 0, "Rough guess of how many GETs will be coming for -bar to start at. It will adjust")
+	pflag.BoolVar(&useBar, "bar", false, "Use progress bar instead of printing lines, can still use --stats")
+	pflag.IntVar(&totalGuess, "guess", 0, "Rough guess of how many GETs will be coming for --bar to start at. It will adjust")
 	pflag.BoolVar(&COMPARE, "checkrequestheader", false, "Checks to see if the response has an X-Request-ID header, else mismatch")
 
 	pflag.CommandLine.MarkHidden("checkrequestheader") // super niche
