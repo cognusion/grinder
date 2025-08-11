@@ -313,13 +313,19 @@ func scanStdIn(workChan chan racket.Work, abortChan chan bool, rChan chan urlCod
 
 	var count int64
 	var lines int64
+	defer func() { DebugOut.Printf("EOF seen after %d lines. %d total work\n", lines, count) }()
 	scanner := bufio.NewScanner(os.Stdin)
-	for scanner.Scan() {
+	for {
 		select {
 		case <-abortChan:
 			DebugOut.Println("scanner aborting!")
 			return
-		default:
+		case b := <-boolWaiter(scanner.Scan):
+			// woo!
+			if !b {
+				// We're done
+				return
+			}
 		}
 		DebugOut.Println("scanner sending...")
 		lines++
@@ -348,11 +354,7 @@ func scanStdIn(workChan chan racket.Work, abortChan chan bool, rChan chan urlCod
 				// Work assigned
 			}
 		}
-
 	}
-	// POST: we've seen EOF
-	DebugOut.Printf("EOF seen after %d lines. %d total work\n", lines, count)
-
 }
 
 func compare(resp *http.Response) bool {
@@ -362,4 +364,12 @@ func compare(resp *http.Response) bool {
 	line = strings.TrimSpace(line)
 	DebugOut.Printf("%s == %s?\n", reqid, line)
 	return line == reqid
+}
+
+func boolWaiter(f func() bool) <-chan bool {
+	var bchan = make(chan bool, 1)
+
+	go func() { bchan <- f() }()
+
+	return bchan
 }
