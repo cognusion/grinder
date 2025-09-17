@@ -5,7 +5,7 @@ go 1.24.6
 require (
 	github.com/cheggaaa/pb/v3 v3.1.7
 	github.com/cognusion/go-humanity v1.3.0
-	github.com/cognusion/go-racket v0.0.1
+	github.com/cognusion/go-racket v1.0.0
 	github.com/cognusion/go-recyclable v1.2.0
 	github.com/cognusion/go-signalhandler v0.1.0
 	github.com/cognusion/semaphore v1.3.3
