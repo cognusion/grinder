@@ -6,12 +6,12 @@ require (
 	github.com/cheggaaa/pb/v3 v3.1.7
 	github.com/cognusion/go-humanity v1.3.0
 	github.com/cognusion/go-racket v0.0.1
-	github.com/cognusion/go-recyclable v1.1.1
+	github.com/cognusion/go-recyclable v1.2.0
 	github.com/cognusion/go-signalhandler v0.1.0
 	github.com/cognusion/semaphore v1.3.3
 	github.com/fatih/color v1.18.0
 	github.com/rcrowley/go-metrics v0.0.0-20250401214520-65e299d6c5c9
-	github.com/spf13/pflag v1.0.7
+	github.com/spf13/pflag v1.0.10
 	github.com/viki-org/dnscache v0.0.0-20130720023526-c70c1f23c5d8
 )
 
@@ -21,7 +21,7 @@ require (
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mattn/go-runewidth v0.0.16 // indirect
 	github.com/rivo/uniseg v0.4.7 // indirect
-	github.com/spf13/cast v1.9.2 // indirect
-	golang.org/x/exp v0.0.0-20220323121947-b445f275a754 // indirect
-	golang.org/x/sys v0.35.0 // indirect
+	github.com/spf13/cast v1.10.0 // indirect
+	golang.org/x/exp v0.0.0-20250911091902-df9299821621 // indirect
+	golang.org/x/sys v0.36.0 // indirect
 )
