@@ -13,6 +13,7 @@ import (
 	"time"
 
 	"github.com/cheggaaa/pb/v3"
+	"github.com/cognusion/dnscache"
 	"github.com/cognusion/go-humanity"
 	"github.com/cognusion/go-racket"
 	"github.com/cognusion/go-recyclable"
@@ -21,7 +22,6 @@ import (
 	"github.com/fatih/color"
 	"github.com/rcrowley/go-metrics"
 	"github.com/spf13/pflag"
-	"github.com/viki-org/dnscache"
 )
 
 // Various globals

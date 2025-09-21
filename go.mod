@@ -1,9 +1,10 @@
 module github.com/cognusion/grinder
 
-go 1.24.6
+go 1.25.1
 
 require (
 	github.com/cheggaaa/pb/v3 v3.1.7
+	github.com/cognusion/dnscache v0.5.0
 	github.com/cognusion/go-humanity v1.3.0
 	github.com/cognusion/go-racket v1.0.1
 	github.com/cognusion/go-recyclable v1.2.0
@@ -12,7 +13,6 @@ require (
 	github.com/fatih/color v1.18.0
 	github.com/rcrowley/go-metrics v0.0.0-20250401214520-65e299d6c5c9
 	github.com/spf13/pflag v1.0.10
-	github.com/viki-org/dnscache v0.0.0-20130720023526-c70c1f23c5d8
 )
 
 require (
