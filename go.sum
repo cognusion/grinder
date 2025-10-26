@@ -8,8 +8,8 @@ github.com/cognusion/go-humanity v1.3.0 h1:06/WaNW34Osg/CLEddz6HVsPQ7FpCjuve5peT
 github.com/cognusion/go-humanity v1.3.0/go.mod h1:5TovZd/sNx1ZT2BpkqgY0wjpu22ZMZTtKr+8EO+VJ6w=
 github.com/cognusion/go-racket v1.1.0 h1:+VjhgF+yLmyFQLQrDLfaH2ANJ9CNuOcFOZOI9ZTR4lU=
 github.com/cognusion/go-racket v1.1.0/go.mod h1:5+cC/cJKA4pkchHPLNG1kMtsXfZ+OffQMef4OT9+iXA=
-github.com/cognusion/go-recyclable v1.2.0 h1:Vqge4egZKOgWLZQUeIiWOjEwXzCaoarPNFv/EFidrBM=
-github.com/cognusion/go-recyclable v1.2.0/go.mod h1:UPIqjekn6iTRbI8dj3SGpictG8mL1zoH0r+91OulOnw=
+github.com/cognusion/go-recyclable/v2 v2.0.0 h1:K4yB89o7pFnvnqFLIm+phBZa1WRq2iAzdfYaIF0i+6A=
+github.com/cognusion/go-recyclable/v2 v2.0.0/go.mod h1:VgtbK2uRMx6W2lF1qmtQD9Fl5+ZaISiLNsqe8d14AYQ=
 github.com/cognusion/go-signalhandler v0.1.0 h1:Aa2fYrBunREHw+qPG2rnUmyBTNb3KrO6HGsfrE4GRTQ=
 github.com/cognusion/go-signalhandler v0.1.0/go.mod h1:TcGvZdpIdgeFztEzcnzGwQ1zHcFLNLy5pViHqTVY5Vg=
 github.com/cognusion/semaphore v1.3.3 h1:ljJLkUi/Ju+cV+QGuNcGga2ZxYCbVJEaBeb28I13FQA=

@@ -16,7 +16,7 @@ import (
 	"github.com/cognusion/dnscache"
 	"github.com/cognusion/go-humanity"
 	"github.com/cognusion/go-racket"
-	"github.com/cognusion/go-recyclable"
+	"github.com/cognusion/go-recyclable/v2"
 	"github.com/cognusion/go-signalhandler"
 	"github.com/cognusion/semaphore"
 	"github.com/fatih/color"
