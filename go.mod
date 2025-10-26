@@ -7,7 +7,6 @@ require (
 	github.com/cognusion/dnscache v0.5.0
 	github.com/cognusion/go-humanity v1.3.0
 	github.com/cognusion/go-racket v1.1.0
-	github.com/cognusion/go-recyclable/v2 v2.0.0
 	github.com/cognusion/go-signalhandler v0.1.0
 	github.com/cognusion/semaphore v1.3.3
 	github.com/fatih/color v1.18.0

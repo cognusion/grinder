@@ -16,7 +16,6 @@ import (
 	"github.com/cognusion/dnscache"
 	"github.com/cognusion/go-humanity"
 	"github.com/cognusion/go-racket"
-	"github.com/cognusion/go-recyclable/v2"
 	"github.com/cognusion/go-signalhandler"
 	"github.com/cognusion/semaphore"
 	"github.com/fatih/color"
@@ -42,8 +41,7 @@ var (
 	OutFormat = log.Ldate | log.Ltime | log.Lshortfile
 	DebugOut  = log.New(io.Discard, "[DEBUG] ", OutFormat)
 
-	BufferPool = recyclable.NewBufferPool()
-	Meter      = metrics.NewMeter()
+	Meter = metrics.NewMeter()
 
 	wchan = make(chan racket.Work)
 )
